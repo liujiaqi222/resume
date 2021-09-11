@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- =====BOX ICONS===== -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2791089_jipt64000yc.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -28,7 +29,6 @@
                     <li class="nav__item"><a href="#about" class="nav__link">关于</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">技能</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">作品</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">联系</a></li>
                 </ul>
             </div>
 
@@ -44,7 +44,9 @@
             <div class="home__data">
                 <h1 class="home__title">Hi,<br>我是 <span class="home__title-color">嘉琪</span><br> Web developer</h1>
 
-                <a href="#" class="button">Contact</a>
+                <a href="tel:2473487465@qq.com" class="button">联系我</a> 
+
+
             </div>
 
             <div class="home__social">
@@ -56,7 +58,12 @@
             </div>
 
             <div class="home__img">
-                <img src="assets/img/perfil.png" alt="">
+
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="home_blob">
+                        <path fill="#3e6ff4" d="M47.8,-64.3C62.4,-55.2,75,-41.8,79.7,-26.2C84.4,-10.5,81.2,7.4,74.1,22.5C67,37.5,56,49.7,43,58.4C30,67.2,15,72.4,-0.6,73.3C-16.3,74.2,-32.5,70.7,-45.6,62C-58.7,53.3,-68.6,39.4,-75.6,23.3C-82.5,7.2,-86.4,-11.1,-81.1,-26C-75.8,-41,-61.2,-52.6,-46.2,-61.6C-31.1,-70.5,-15.6,-76.8,0.5,-77.5C16.6,-78.2,33.2,-73.4,47.8,-64.3Z" transform="translate(100 100)" />
+                        <image class="home_blob-img" x=25 y=50 href="assets/img/perfil.png" />
+                  </svg>
+                  
             </div>
         </section>
 
@@ -66,7 +73,7 @@
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/img/about.jpg" alt="">
+                    <img src="assets/img/work_5.jpg" alt="">
                 </div>
 
                 <div>
@@ -83,7 +90,8 @@
             <div class="skills__container bd-grid">
                 <div>
                     <h2 class="skills__subtitle">Profesional Skills</h2>
-                    <p class="skills__text">我熟练使用CSS/Javascript和Vue2/Vue3 及其全家桶(vue-router, vuex, vite, vue-cli)，并对后端有一定的了解。</p>
+                    <p class="skills__text">我熟练使用CSS/Javascript和Vue2/Vue3 及其全家桶(vue-router, vuex, vite,
+                        vue-cli)，并对后端有一定的了解。</p>
                     <div class="skills_content ">
                         <div class="skills_header">
                             <i class='iconfont icon-code skills_fronticon'></i>
@@ -218,7 +226,7 @@
                 </div>
 
                 <div>
-                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    <img src="assets/img/work_4.jpg" alt="" class="skills__img">
                 </div>
             </div>
         </section>
@@ -227,41 +235,44 @@
         <section class="work section" id="work">
             <h2 class="section-title">Work</h2>
 
-            <div class="work__container bd-grid">
-                <div class="work__img">
+            <div class="mobile work__container bd-grid">
+                <div class="work__img work__image">
                     <img src="assets/img/work1.jpg" alt="">
                 </div>
-                <div class="work__img">
+                <div class="work__img work__image">
                     <img src="assets/img/work2.jpg" alt="">
                 </div>
-                <div class="work__img">
+                <div class="work__img work__image">
                     <img src="assets/img/work3.jpg" alt="">
                 </div>
-                <div class="work__img">
-                    <img src="assets/img/work4.jpg" alt="">
+            </div>
+            <div class="pc  wrapper">
+                <ul class="carousel_list">
+                    <li class="work__image">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </li>
+                    <li class="work__image">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </li>
+                    <li class="work__image">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </li>
+                    <li class="work__image">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </li>
+                </ul>
+                <div class="button_wrap">
+                    <button class="button button-left"><i class="fas fa-arrow-left"></i></button>
+                    <button class="button button-right"><i class="fas fa-arrow-right"></i></button>
                 </div>
-                <div class="work__img">
-                    <img src="assets/img/work5.jpg" alt="">
-                </div>
-                <div class="work__img">
-                    <img src="assets/img/work6.jpg" alt="">
-                </div>
+                <ol class="circles">
+                    <li data-n="0" class="active"></li>
+                    <li data-n="1"></li>
+                    <li data-n="2"></li>
+                </ol>
             </div>
         </section>
 
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Enviar" class="contact__button button">
-                </form>
-            </div>
-        </section>
     </main>
 
     <!--===== FOOTER =====-->
@@ -269,8 +280,7 @@
         <p class="footer__title">Jiaqi Coder</p>
         <a href="https://blog.csdn.net/weixin_44717047" target="_blank" class="footer__icon"><i
                 class='iconfont icon-icon_csdn'></i></a>
-        <a href="https://gitee.com/zyxbj" class="footer__icon" target="_blank"> <i
-                class='iconfont icon-gitee'></i></a>
+        <a href="https://gitee.com/zyxbj" class="footer__icon" target="_blank"> <i class='iconfont icon-gitee'></i></a>
         <a href="#" class="footer__icon wechat"><i class='iconfont icon-shuyi_weixin'></i></a>
         <p>&#169; 2021 copyright all right reserved</p>
     </footer>
@@ -279,7 +289,7 @@
     <div class="mask isShow">
         <div class="imgbox">
             <i class="iconfont icon-times cancel"></i>
-            <img src="./assets/img/qr.png" alt="">
+            <img src="./assets/img/qr.jpg" alt="">
         </div>
     </div>
 
